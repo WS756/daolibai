@@ -1,0 +1,10 @@
+# Gowin IDE 生成文件（综合/布局布线产物，非源码）
+impl/
+
+# IDE 用户设置
+*.gprj.user
+
+# 日志与临时文件
+*.log
+*.bak
+*~
