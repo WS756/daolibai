@@ -4,9 +4,9 @@ module pendulum_ctrl #(
     parameter signed [15:0] ANG_KI = 16'sd0,
     parameter signed [15:0] ANG_KD = 16'sd3072,
 
-    parameter signed [15:0] POS_KP = 16'sd32,
+    parameter signed [15:0] POS_KP = 16'sd48,
     parameter signed [15:0] POS_KI = 16'sd0,
-    parameter signed [15:0] ARM_DAMP = 16'sd64,
+    parameter signed [15:0] ARM_DAMP = 16'sd96,
 
     parameter [15:0] ONE_REV     = 16'd1040,
     parameter [15:0] ROTATE_STEP = 16'd1,

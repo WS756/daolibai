@@ -65,10 +65,10 @@ module top(
     assign AN2  = 1'b0;
     assign PWMA = 1'b0;
 
+    wire [15:0] displayed_angle = {4'd0, theta} + 16'd135;
     telemetry monitor(
         .clk(clk_50m), .rst_n(rst_n),
-        .running(running),
-        .angle(theta), .error(angle_error), .pos_error(pos_error), .command(command),
+        .angle(displayed_angle), .encoder({enc_pos, 16'd0}),
         .tx(uart_tx)
     );
 
